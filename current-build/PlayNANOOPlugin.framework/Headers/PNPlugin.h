@@ -21,15 +21,19 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithPlugin:(NSString *)uniqueUserID;
 -(instancetype)initWithPlugin:(NSString *)uniqueUserID userName:(NSString *)userName;
 -(instancetype)initWithPlugin:(NSString *)uniqueUserID userName:(NSString *)userName userLanguage:(NSString *)userLanguage;
--(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey uniqueUserID:(NSString *)uniqueUserID;
--(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey uniqueUserID:(NSString *)uniqueUserID userName:(NSString *)userName;
--(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey uniqueUserID:(NSString *)uniqueUserID userName:(NSString *)userName userLanguage:(NSString *)userLanguage;
+-(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey version:(NSInteger)version;
+-(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey version:(NSInteger *)version uniqueUserID:(NSString *)uniqueUserID;
+-(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey version:(NSInteger *)version uniqueUserID:(NSString *)uniqueUserID userName:(NSString *)userName;
+-(instancetype)initWithPluginInfo:(NSString *)appID serviceKey:(NSString *)serviceKey secretKey:(NSString *)secretKey version:(NSInteger *)version uniqueUserID:(NSString *)uniqueUserID userName:(NSString *)userName userLanguage:(NSString *)userLanguage;
+
+// Change UUID
+-(void)setUniqueUserID:(NSString *)uuid;
 
 // Change Language
--(void)userLanguage:(NSString *)language;
+-(void)setUserLanguage:(NSString *)language;
  
 // Change Name
--(void)userName:(NSString *)name;
+-(void)setUserName:(NSString *)name;
 
 // Access
 -(void)accessEvent;
