@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Coupon
 -(void)couponUse:(NSString *)code;
+-(void)couponUse:(NSString *)code isCallbackTestMode:(BOOL)isCallbackTestMode;
 
 //Forum
 //-(void)forumThread:(NSString *)language section:(NSString *)section limit:(NSInteger *)limit;
@@ -63,6 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // InAppPurchase
 -(void)iapiOS:(NSString *)productUID receipt:(NSString *)receipt currency:(NSString *)currency price:(long)price;
+-(void)iapiOS:(NSString *)productUID receipt:(NSString *)receipt currency:(NSString *)currency price:(long)price isCallbackTestMode:(BOOL)isCallbackTestMode;
 
 // Storage
 -(void)storageSave:(NSString *)key value:(NSString *)value isPrivate:(BOOL)isPrivate;
