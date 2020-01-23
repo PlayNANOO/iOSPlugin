@@ -1,4 +1,4 @@
-# PlayNANOO UnityPlugin
+# PlayNANOO iOS Plugin
 _Copyright (c) 2019 NANOO Company Inc. All rights reserved._
 
 Use Play! NANOO plugin to build mobile game server and management tools using the Play! NANOO plug-in.
