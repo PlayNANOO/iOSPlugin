@@ -35,14 +35,6 @@ static NSString *const PN_API_CODE_FRIEND_READY = @"FRIEND_READY";
 static NSString *const PN_API_CODE_FRIEND_REQUEST = @"FRIEND_REQUEST";
 static NSString *const PN_API_CODE_FRIEND_ACCEPT = @"FRIEND_ACCEPT";
 static NSString *const PN_API_CODE_FRIEND_DELETE = @"FRIEND_DELETE";
-
-static NSString *const PN_API_CODE_CACHE_EXISTS = @"CACHE_EXISTS";
-static NSString *const PN_API_CODE_CACHE_GET = @"CACHE_GET";
-static NSString *const PN_API_CODE_CACHE_MULTI_GET = @"CACHE_MULTI_GET";
-static NSString *const PN_API_CODE_CACHE_SET = @"CACHE_SET";
-static NSString *const PN_API_CODE_CACHE_INCRBY = @"CACHE_INCRBY";
-static NSString *const PN_API_CODE_CACHE_DECRBY = @"CACHE_DECRBY";
-static NSString *const PN_API_CODE_CACHE_DEL = @"CACHE_DEL";
 // 통신 코드 End
 
 #endif /* PNServiceCode_h */
