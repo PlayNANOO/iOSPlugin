@@ -122,9 +122,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)cacheGet:(NSString *)requestCode cacheKey:(NSString *)cacheKey;
 -(void)cacheMultiGet:(NSString *)requestCode cacheKeys:(NSArray *)cacheKeys;
 -(void)cacheSet:(NSString *)requestCode cacheKey:(NSString *)cacheKey cacheValue:(NSString *)cacheValue cacheTTL:(NSInteger *)cacheTTL;
--(void)incrby:(NSString *)requestCode cacheKey:(NSString *)cacheKey cacheValue:(NSInteger *)cacheValue cacheTTL:(NSInteger *)cacheTTL;
--(void)decrby:(NSString *)requestCode cacheKey:(NSString *)cacheKey cacheValue:(NSInteger *)cacheValue cacheTTL:(NSInteger *)cacheTTL;
--(void)del:(NSString *)requestCode cacheKey:(NSString *)cacheKey;
+-(void)cacheIncrby:(NSString *)requestCode cacheKey:(NSString *)cacheKey cacheValue:(NSInteger *)cacheValue cacheTTL:(NSInteger *)cacheTTL;
+-(void)cacgeDecrby:(NSString *)requestCode cacheKey:(NSString *)cacheKey cacheValue:(NSInteger *)cacheValue cacheTTL:(NSInteger *)cacheTTL;
+-(void)cacheDel:(NSString *)requestCode cacheKey:(NSString *)cacheKey;
 
 // Forum
 -(void)openBanner:(UIViewController *)viewController;
