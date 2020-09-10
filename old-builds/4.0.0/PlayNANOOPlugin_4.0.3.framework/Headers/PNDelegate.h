@@ -7,7 +7,7 @@
 //
 @protocol PNDelegate
 @optional
--(void)receiveMessage:(NSString *)serviceCode requestCode:(NSString *)requestCode state:(NSString *)state message:(NSString *)message rawData:(NSString *)rawData;
+-(void)receiveMessage:(NSString *)serviceCode requestCode:(NSString *)requestCode state:(NSString *)state message:(NSString *)message;
 @end
 
 #ifndef PNDelegate_h

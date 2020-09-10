@@ -70,7 +70,6 @@ NS_ASSUME_NONNULL_BEGIN
 //-(void)postboxSubscriptionCancel:(NSString *)productUUID;
 -(void)postbox:(NSString *)requestCode;
 -(void)postboxItemUse:(NSString *)requestCode uid:(NSString *)uid;
--(void)postboxMultiItemUse:(NSString *)requestCode uids:(NSArray *)uids;
 -(void)postboxItemSend:(NSString *)requestCode itemCode:(NSString *)itemCode itemCount:(NSInteger *)itemCount itemExpireDay:(NSInteger *)itemExpireDay itemMessage:(NSString *)itemMessage ;
 -(void)postboxItemSend:(NSString *)requestCode itemCode:(NSString *)itemCode itemCount:(NSInteger *)itemCount itemExpireDay:(NSInteger *)itemExpireDay;
 -(void)postboxItemFriendSend:(NSString *)requestCode friendUUID:(NSString *)friendUUID itemCode:(NSString *)itemCode itemCount:(NSInteger *)itemCount itemExpireDay:(NSInteger *)itemExpireDay itemMessage:(NSString *)itemMessage ;
